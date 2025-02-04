@@ -6,21 +6,21 @@ import Button from 'react-bootstrap/Button';
 export default function HeroPage() {
   return <>
     <div className="container">
-      <div className="row justify-content-around mx-auto">
-        <div className="col-md-6 mt-5 pt-5 ">
+      <div className="row justify-content-center mx-auto">
+        <div className="col-md-6 col-12 mt-md-5 mt-0 pt-5 ">
           <h1 className="fw-bolder p-2 fs-1">COOKING MADE FUN AND EASY: UNLEASH <br/>  YOU INNER CHEF</h1>
-          <span className="fw-lighter fs-6 mt-3 p-2">Discover more than <span className="fw-lighter p-2 fs-6" style={{'color': 'orange'}}>10,000 recipes </span>in your hand with the best recipe.<br/> <span className="p-2 fs-6">Help you to find the easiest way to cook.</span></span>
+          <div className="fw-lighter fs-6 mt-3 p-1 text-wrap">
+            Discover more than
+            <span className="fw-lighter p-2 fs-6" style={{'color': 'orange'}}>10,000 recipes </span>
+            in your hand with the best recipe<br/>
+            <span className="fs-6">Help you to find the easiest way to cook.</span>
+          </div>
           <br/>
-          <div className="row justify-content-between">
-            <div className="col-md-6">
+          <div className="col">
               <Button variant="warning" className="p-3 mt-4 rounded-3" style={{ width: '14rem'}}>Explore Recipes</Button>
-            </div>
-            <div className="col-md-6 me-auto mt-5">
-              <img src={tomato} className="img-fluid" style={{'width': '25%'}} alt="hero image"/>
-            </div>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 mb-sm-5 d-lg-block d-none mt-5">
           <div className="" style={{marginBottom: '-10rem'}}>
             <img src={tomato} className="img-fluid" style={{'width': '12%'}} alt="hero image"/>
           </div>
